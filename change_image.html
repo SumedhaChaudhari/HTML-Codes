@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+        #img1{
+            margin-left: 165px;
+        }
+        #btn{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2><u>Food-Corner</u></h2>
+        <img id="img1" src="../Assets/images/scenery.jpg" alt="">
+        <br>
+        <button id="btn" type="button" onclick="change_khandvi()">Khandvi</button> <br>
+        <button type="button" onclick="chnage_bhajiye()">Bhajiye</button>
+        <button type="button" onclick="change_bhel()">Bhel-Puri</button>
+        <button type="button" onclick="change_cutlet()">Cutlet</button>
+        <button type="button" onclick="change_rool()">Roll</button>
+        <script>
+            function change_khandvi(){
+                document.getElementById("img1").src="../Assets/images/scenery.jpg"
+                document.getElementById("img1").innerHTML="Khandvi"
+            }
+            function chnage_bhajiye(){
+                document.getElementById("img1").src="../Assets/Images/bhajiye.jpg"
+                document.getElementById("img1").innerHTML="Bhajiye"
+            }
+            function change_bhel(){
+                document.getElementById("img1").src="file:///E:/cdac%20%20dac/Web%20programming%20technologies/HTML/Assets/images/scenery_orange.jpg"
+                document.getElementById("img1").innerHTML="Bhel"
+            }
+            function change_cutlet(){
+                document.getElementById("img1").src="../Assets/Images/cutlet.jpg"
+                document.getElementById("img1").innerHTML="Cutlet"
+            }
+            function change_rool(){
+                document.getElementById("img1").src="../Assets/Images/roll.webp"
+                document.getElementById("img1").innerHTML="roll"
+            }
+
+        </script>
+    </div>
+</body>
+</html> 
